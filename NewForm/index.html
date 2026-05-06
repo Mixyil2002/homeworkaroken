@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="normalize.css" />
+  </head>
+  <body>
+    <form class="form">
+      <fieldset class="fieldset-1">
+        <h2>Ваши личные данные</h2>
+        <label class="label-1">
+          Ваше Имя
+          <input
+            class="input"
+            type="text"
+            placeholder="Имя"
+            name="name"
+            required
+          />
+        </label>
+        <label class="label-1">
+          Ваш возраст
+          <input
+            class="input"
+            type="number"
+            inputmode="numeric"
+            name="age"
+            min="0"
+            placeholder="Возраст"
+            required
+          />
+        </label>
+        <label class="label-1">
+          Ваш номер телефона
+          <input
+            class="input"
+            type="tel"
+            placeholder="Номер телефона"
+            name="phone"
+            inputmode="tel"
+            required
+          />
+        </label>
+        <label class="label-1">
+          Ваша почта
+          <input
+            class="input"
+            type="email"
+            inputmode="email"
+            placeholder="Почта"
+            name="email"
+            required
+          />
+        </label>
+      </fieldset>
+
+      <fieldset class="fieldset-2">
+        <label>
+          Сообщение
+          <textarea
+            class="text-area"
+            required
+            name="message"
+            placeholder="Ваше сообщение"
+          >
+          </textarea>
+        </label>
+
+        <input
+          type="checkbox"
+          class="checkbox checkbox-label"
+          name="Rules"
+          value="Rules"
+          required
+        />
+        <span>Я принимаю правила</span>
+
+        <button class="button" type="submit" disabled>Отправить</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
