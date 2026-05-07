@@ -1,0 +1,91 @@
+article {
+  padding-top: 80px;
+}
+.article-title {
+  max-width: 596px;
+  margin-bottom: 40px;
+  font-family: Oswald;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 115%;
+  text-transform: uppercase;
+  color: #2c332f;
+}
+.article-text1 {
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #535755;
+}
+.article-text2 {
+  margin-bottom: 80px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #535755;
+}
+.article-decor-wrapper {
+  position: relative;
+}
+.article-decor-wrapper::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: url(../images/Decor.svg) no-repeat;
+  width: 528px;
+  height: 48px;
+}
+
+.article-decor-wrapper-1::before {
+  left: -350px;
+  top: 100px;
+}
+
+.img {
+  width: 100%;
+  height: 512px;
+  margin-bottom: 80px;
+}
+.article-h2 {
+  margin-bottom: 40px;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 115%;
+  text-transform: uppercase;
+  color: #2c332f;
+}
+li::marker {
+  color: #3596ed;
+}
+.article-text3 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #535755;
+}
+.article-list {
+  margin-bottom: 80px;
+  margin-top: 0px;
+  padding-left: 14px;
+}
+.article-item {
+  margin-bottom: 12px;
+}
+.article-decor-wrapper-2::before {
+  right: -350px;
+  bottom: 136px;
+}
+.video {
+  margin-bottom: 40px;
+  width: 100%;
+  height: 686px;
+}
+.article-text4 {
+  padding-bottom: 120px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #535755;
+}
