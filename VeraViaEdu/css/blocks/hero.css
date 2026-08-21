@@ -1,0 +1,251 @@
+.hero__headphone {
+  position: relative;
+}
+
+.hero__text-1 {
+  font-weight: 600;
+  font-size: 18px;
+  color: #747d81;
+}
+
+.VeraVla {
+  position: relative;
+  font-weight: 600;
+  font-size: 108px;
+  background: linear-gradient(180deg, #fff 31.75%, #1a3031 100%);
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 18px;
+}
+
+@media (width <= 1225) {
+  .VeraVla {
+    width: 806px;
+    font-weight: 600;
+    font-size: 51px;
+    background: linear-gradient(180deg, #fff 31.75%, #1a3031 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.VeraVla::before {
+  content: " ";
+  position: absolute;
+  z-index: -1;
+  background: url(../../icons/Neuron_4.svg) no-repeat;
+  width: 1200px;
+  height: 700px;
+  right: -40%;
+  top: -120%;
+  box-shadow: 58px 4px 191px 47px #000;
+  mix-blend-mode: lighten;
+}
+
+@media (max-width: 1200px) {
+  .VeraVla::before {
+    max-width: 100%;
+    z-index: 10;
+  }
+}
+
+@media (width <= 360px) {
+  /* .hero {
+    min-width: 1200px;
+    margin-left: 10%;
+  } */
+}
+
+.hero__text-2 {
+  width: 580px;
+  margin-bottom: 77px;
+  font-weight: 500;
+  font-size: 18px;
+  color: #fff;
+}
+
+.warranty {
+  width: 400px;
+  height: auto;
+  font-family: var(--font-family);
+  font-weight: 750;
+  font-size: 18px;
+  color: #fff;
+}
+
+.hero__text-book {
+  margin: 0 0 101px 0;
+  width: 400px;
+  font-weight: 500;
+  line-height: 172%;
+  color: #00e0ff;
+}
+
+.hero__secondary-block {
+  display: flex;
+  gap: 33px;
+}
+
+.hero__secondary-block-1 {
+  position: relative;
+  border-radius: 12px;
+  width: 71px;
+  height: 71px;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 224, 255, 0.11) 0%,
+    rgba(0, 224, 255, 0.11) 100%
+  );
+  flex-shrink: 0;
+}
+.hero__secondary-block-2 {
+  margin-top: 3px;
+}
+
+.hero__book-icon {
+  content: " ";
+  position: absolute;
+  left: 16px;
+  top: 18px;
+}
+
+.hero__button {
+  margin-bottom: 178px;
+}
+
+.hero__button-1 {
+  position: relative;
+}
+
+.hero__button-1::before {
+  content: " ";
+  position: absolute;
+  z-index: -1;
+  background: url(../../icons/Neuron_1bottomleft.svg) no-repeat;
+  width: 312px;
+  height: 356px;
+  top: 70%;
+  left: -30%;
+  transform: translateY(-50%);
+  box-shadow: 58px 4px 191px 47px #000;
+  mix-blend-mode: lighten;
+}
+
+.hero__button-cheak {
+  position: relative;
+  z-index: 1;
+  border-radius: 9px;
+  width: 479px;
+  height: 60px;
+  box-shadow: 0 7px 20px -7px #00e0ff;
+  background: linear-gradient(180deg, rgba(3, 225, 255, 0.66) 0%, #13cdc2 100%);
+  transition:
+    transform 0.5s ease,
+    box-shadow 0.5s ease;
+}
+
+.hero__button-cheak:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 36px rgba(45, 214, 255, 0.5);
+  transition:
+    transform 0.5s ease,
+    box-shadow 0.5s ease;
+}
+
+.hero__text-3 {
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+}
+
+.hero__switch {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 1vh;
+  margin-bottom: 89px;
+  margin-right: 20px;
+  gap: 32px;
+  transform: rotate(90deg);
+}
+.hero__switch::after {
+  content: "";
+  position: absolute;
+  background: url(../../Elements/Ellipse\ 11.svg) no-repeat;
+  z-index: -1;
+  background-position: center;
+  background-size: cover;
+  width: 365px;
+  height: 945px;
+  border-radius: 100%;
+  fill: #00e0ff;
+  filter: blur(100px);
+}
+
+.hero__switch .hero__switch-text {
+  font-weight: 600;
+  font-size: 10px;
+  margin-right: 50px;
+  letter-spacing: 0.36em;
+  text-transform: uppercase;
+  color: #747d81;
+  transform: rotate(180deg);
+}
+
+.hero__switch-svg {
+  display: flex;
+  align-items: start;
+  width: 20px;
+  height: 37px;
+  transform: rotate(90deg);
+  cursor: pointer;
+  margin: 0;
+}
+
+.hero__switch-svg {
+  position: relative;
+  right: 40px;
+}
+
+.hero__switch-svg::before {
+  content: " ";
+  position: absolute;
+  z-index: -1;
+  background: url(../../icons/Tochka.svg) no-repeat;
+  width: 30px;
+  height: 30px;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(180deg);
+  cursor: pointer;
+}
+
+.hero__blur-line {
+  position: relative;
+  height: 2px;
+}
+
+.hero__blur-line::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 2px;
+  transform: translateY(-50%);
+  background: rgba(135, 206, 235, 0.6);
+  box-shadow:
+    0 0 24px 0 #00e0ff,
+    0 4px 15px 0 #4ad9ec,
+    0 3px 15px 0 rgba(0, 224, 255, 0.93);
+  filter: blur(2px);
+  z-index: 1;
+}
