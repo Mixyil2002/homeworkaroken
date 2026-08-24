@@ -1,0 +1,29 @@
+.page-wrapper {
+  width: 100px;
+  position: relative;
+}
+
+.sidebar {
+  position: fixed;
+  width: 139px;
+  height: 394px;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.pulse-basic {
+  animation: pulse-scale 2s infinite;
+  transform-origin: center center;
+}
+
+@keyframes pulse-scale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.08); /* увеличение на 8% */
+  }
+  100% {
+    transform: scale(1);
+  }
+}
