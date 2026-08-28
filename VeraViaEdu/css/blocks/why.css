@@ -20,9 +20,25 @@
   font-size: 54px;
   color: #fff;
   text-transform: uppercase;
-  width: 776px;
-  height: 126px;
+  max-width: 776px;
+  height: auto;
   margin-bottom: 58px;
+}
+@media (width <= 768px) {
+  .why__main-text-span,
+  .why__main-text {
+    font-weight: 500;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #4abcec;
+  }
+
+  .why__main-text {
+    margin-left: 29px;
+  }
+  .why__main-text-span {
+    color: #fff;
+  }
 }
 
 .why__block-1 {
@@ -40,7 +56,7 @@
 .why__block-card-1 {
   position: relative;
   display: flex;
-  width: 100%;
+  max-width: 100%;
   flex-wrap: wrap;
   border-radius: 20px;
   height: auto;
@@ -185,6 +201,13 @@
   width: 50px;
   height: 50px;
   margin: 36px 0 0 42px;
+}
+
+@media (width <= 768px) {
+  .why__block-svg {
+    min-width: 42px;
+    min-height: 42px;
+  }
 }
 
 .why__block-2-text {

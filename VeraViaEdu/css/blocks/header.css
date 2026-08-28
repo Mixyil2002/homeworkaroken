@@ -2,7 +2,7 @@
   margin-top: 15px;
 }
 
-@media (width <= 768px) {
+@media (width <= 360px) {
   .header-container {
     display: flex;
     flex-direction: column;
@@ -24,6 +24,7 @@
   }
 
   .header__logo {
+    display: none;
     width: 195px;
     height: 58px;
   }
@@ -57,6 +58,12 @@
   height: 438px;
   left: -50%;
   bottom: -170%;
+}
+
+@media (width <= 360px) {
+  .header__element-1::before {
+    display: none;
+  }
 }
 
 .header__container {
@@ -102,6 +109,12 @@
   top: -150px;
   box-shadow: inset 58px 4px 191px 47px #000;
   mix-blend-mode: lighten;
+}
+
+@media (width <= 360px) {
+  .header__phone::before {
+    display: none;
+  }
 }
 
 .header__phone-icon {

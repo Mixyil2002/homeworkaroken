@@ -20,15 +20,24 @@
   margin-bottom: 18px;
 }
 
-@media (width <= 1225) {
+@media (width <= 768px) {
+  .hero__text-1 {
+    font-weight: 600;
+    font-size: 16px;
+    color: #747d81;
+    margin-left: 29px;
+  }
   .VeraVla {
-    width: 806px;
     font-weight: 600;
     font-size: 51px;
-    background: linear-gradient(180deg, #fff 31.75%, #1a3031 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    margin-left: 29px;
+  }
+
+  .hero__text-2 {
+    font-weight: 500;
+    font-size: 16px;
+    margin-left: 29px;
+    color: #fff;
   }
 }
 
@@ -45,10 +54,13 @@
   mix-blend-mode: lighten;
 }
 
-@media (max-width: 1200px) {
-  .VeraVla::before {
-    max-width: 100%;
-    z-index: 10;
+@media (width <= 768px) {
+  .hero__container::before {
+    background: url(../../icons/Neuron_4-mini.svg) no-repeat;
+    width: 474px;
+    height: 284px;
+    left: 40px;
+    top: 450px;
   }
 }
 
@@ -60,7 +72,7 @@
 }
 
 .hero__text-2 {
-  width: 580px;
+  max-width: 580px;
   margin-bottom: 77px;
   font-weight: 500;
   font-size: 18px;
@@ -78,10 +90,31 @@
 
 .hero__text-book {
   margin: 0 0 101px 0;
-  width: 400px;
+  max-width: 472px;
+  font-size: 18px;
   font-weight: 500;
   line-height: 172%;
   color: #00e0ff;
+}
+
+@media (width <= 768px) {
+  .warranty {
+    font-weight: 700;
+    font-size: 16px;
+
+    /* line-height: 21px; */
+    line-height: 1.3125;
+    color: #fff;
+  }
+  .hero__text-book {
+    max-width: 250px;
+    font-weight: 500;
+    font-size: 14px;
+
+    /* line-height: 28px; */
+    line-height: 2;
+    color: #00e0ff;
+  }
 }
 
 .hero__secondary-block {
@@ -101,6 +134,13 @@
   );
   flex-shrink: 0;
 }
+
+@media (width <= 768px) {
+  .hero__secondary-block-1 {
+    margin-left: 29px;
+  }
+}
+
 .hero__secondary-block-2 {
   margin-top: 3px;
 }
@@ -134,17 +174,38 @@
   mix-blend-mode: lighten;
 }
 
+@media (width <= 768px) {
+  .hero__button-1::before {
+    display: none;
+  }
+}
+
 .hero__button-cheak {
   position: relative;
   z-index: 1;
   border-radius: 9px;
-  width: 479px;
+  max-width: 479px;
   height: 60px;
   box-shadow: 0 7px 20px -7px #00e0ff;
   background: linear-gradient(180deg, rgba(3, 225, 255, 0.66) 0%, #13cdc2 100%);
   transition:
     transform 0.5s ease,
     box-shadow 0.5s ease;
+}
+
+@media (width <= 768px) {
+  .hero__button-cheak {
+    border-radius: 9px;
+    width: 300px;
+    height: 60px;
+    box-shadow: 0 7px 20px -7px #00e0ff;
+    background: linear-gradient(
+      180deg,
+      rgba(3, 225, 255, 0.66) 0%,
+      #13cdc2 100%
+    );
+    margin: 150px 0 0 29px;
+  }
 }
 
 .hero__button-cheak:hover {
@@ -190,6 +251,12 @@
   filter: blur(100px);
 }
 
+@media (width <= 360px) {
+  .hero__switch::after {
+    display: none;
+  }
+}
+
 .hero__switch .hero__switch-text {
   font-weight: 600;
   font-size: 10px;
@@ -226,6 +293,12 @@
   left: 50%;
   transform: translate(-50%, -50%) rotate(180deg);
   cursor: pointer;
+}
+
+@media (width <= 1050px) {
+  .hero__switch {
+    display: none;
+  }
 }
 
 .hero__blur-line {

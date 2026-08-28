@@ -4,6 +4,7 @@
 }
 
 .sidebar {
+  display: none;
   position: fixed;
   width: 139px;
   height: 394px;
