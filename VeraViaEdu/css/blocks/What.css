@@ -1,0 +1,212 @@
+.What {
+  position: relative;
+  overflow: hidden;
+}
+
+.What::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  background: linear-gradient(
+    286.41deg,
+    rgba(2, 35, 53, 0.8) 3.7%,
+    rgba(12, 55, 61, 0.8) 91.57%
+  );
+  transform: rotate(180deg);
+  z-index: 0;
+  pointer-events: none;
+}
+.What > * {
+  position: relative;
+  z-index: 1;
+}
+
+.What__block {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 42px;
+}
+
+.What__main-text {
+  margin-top: 105px;
+  margin-bottom: 67px;
+}
+
+.What__main-text-1 {
+  font-weight: 500;
+  font-size: 54px;
+  color: #4abcec;
+}
+
+.What__main-text span {
+  color: #fff;
+  font-weight: 500;
+  font-size: 54px;
+}
+
+@media (width < 768px) {
+  .What__main-text-1 {
+    font-weight: 500;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #4abcec;
+    max-width: 301px;
+  }
+
+  .What__main-text span {
+    font-weight: 500;
+    font-size: 30px;
+    text-transform: uppercase;
+  }
+}
+
+.What__block-1-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.4375;
+  color: #fff;
+}
+
+.What__block-1 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  max-width: 568px;
+}
+.What__block-1::before {
+  content: " ";
+  position: absolute;
+  z-index: 1;
+  background: url(../../icons/why-element.svg);
+  width: 63px;
+  height: 32px;
+  top: 92%;
+  left: 30px;
+  transform: translateY(0);
+  opacity: 1;
+  transition:
+    transform 0.5s ease,
+    opacity 0.5s ease;
+}
+
+.What__block-2 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  max-width: 568px;
+  margin-left: 49px;
+  margin-bottom: 129px;
+}
+
+.What__block-2::before {
+  content: " ";
+  position: absolute;
+  z-index: 1;
+  background: url(../../icons/why-element.svg);
+  width: 63px;
+  height: 32px;
+  top: 92%;
+  right: 200px;
+  transform: translateY(0);
+  opacity: 1;
+  transition:
+    transform 0.5s ease,
+    opacity 0.5s ease;
+}
+
+@media (width < 1200px) {
+  .What__block-1-text {
+    margin-left: 3px;
+  }
+  .What__block-1 {
+    flex-direction: column;
+    gap: 17px;
+  }
+
+  .What__block-2 {
+    flex-direction: column-reverse;
+    margin-left: 0;
+    gap: 17px;
+  }
+
+  .What__block-2::before,
+  .What__block-1::before {
+    display: none;
+  }
+}
+
+@media (width < 920px) {
+  .What__block-1 {
+    align-items: flex-start;
+  }
+
+  .What__block-1-text {
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .What__block-2 {
+    align-items: flex-start;
+  }
+}
+
+@media (width < 540px) {
+  .What__block-1 {
+    max-width: 140px;
+    gap: 17px;
+    justify-content: flex-start;
+  }
+  .What__block-2 {
+    flex-direction: column-reverse;
+    max-width: 140px;
+    gap: 17px;
+    margin-left: 0;
+  }
+  .What__block-1-text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.21429;
+    color: #fff;
+    max-height: 120px;
+    margin-left: 3px;
+  }
+
+  .What__block-images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    width: 138px;
+    height: 98px;
+  }
+}
+
+.What__blur-line {
+  position: relative;
+  height: 2px;
+}
+
+.What__blur-line::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 2px;
+  transform: translateY(-50%);
+  background: rgba(135, 206, 235, 0.6);
+  box-shadow:
+    0 0 24px 0 #00e0ff,
+    0 4px 15px 0 #4ad9ec,
+    0 3px 15px 0 rgba(0, 224, 255, 0.93);
+  filter: blur(2px);
+  z-index: 1;
+}

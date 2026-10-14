@@ -25,18 +25,20 @@
     font-weight: 600;
     font-size: 16px;
     color: #747d81;
-    margin-left: 29px;
+  }
+
+  .section-1 {
+    padding-top: 61px;
   }
   .VeraVla {
     font-weight: 600;
     font-size: 51px;
-    margin-left: 29px;
   }
 
   .hero__text-2 {
     font-weight: 500;
     font-size: 16px;
-    margin-left: 29px;
+
     color: #fff;
   }
 }
@@ -46,7 +48,7 @@
   position: absolute;
   z-index: 1;
   background: url(../../icons/Neuron_4.svg) no-repeat;
-  width: 1200px;
+  width: 100%;
   height: 700px;
   left: 42%;
 
@@ -54,20 +56,21 @@
   mix-blend-mode: lighten;
 }
 
+@media (width <= 1024px) {
+  .hero__container::before {
+    background: url(../../icons/Neuron_4.svg) no-repeat;
+    max-width: 700px;
+    max-height: 700px;
+  }
+}
+
 @media (width <= 768px) {
   .hero__container::before {
     background: url(../../icons/Neuron_4-mini.svg) no-repeat;
     width: 474px;
     height: 284px;
-    left: 40px;
-    top: 450px;
-  }
-}
-
-@media (width <= 360px) {
-  .hero {
-    min-width: 1200px;
-    margin-left: 10%;
+    left: 15px;
+    top: 350px;
   }
 }
 
@@ -80,7 +83,6 @@
 }
 
 .warranty {
-  width: 400px;
   height: auto;
   font-family: var(--font-family);
   font-weight: 750;
@@ -107,7 +109,7 @@
     color: #fff;
   }
   .hero__text-book {
-    max-width: 250px;
+    max-width: 200px;
     font-weight: 500;
     font-size: 14px;
 
@@ -135,12 +137,6 @@
   flex-shrink: 0;
 }
 
-@media (width <= 768px) {
-  .hero__secondary-block-1 {
-    margin-left: 29px;
-  }
-}
-
 .hero__secondary-block-2 {
   margin-top: 3px;
 }
@@ -165,7 +161,7 @@
   position: absolute;
   z-index: -1;
   background: url(../../icons/Neuron_1bottomleft.svg) no-repeat;
-  width: 312px;
+  max-width: 312px;
   height: 356px;
   top: 70%;
   left: -30%;
@@ -186,6 +182,7 @@
   border-radius: 9px;
   max-width: 479px;
   height: 60px;
+  /* margin: 0 13px 0 13px; */
   box-shadow: 0 7px 20px -7px #00e0ff;
   background: linear-gradient(180deg, rgba(3, 225, 255, 0.66) 0%, #13cdc2 100%);
   transition:
@@ -195,8 +192,12 @@
 
 @media (width <= 768px) {
   .hero__button-cheak {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
     border-radius: 9px;
-    width: 300px;
+    max-width: 100%;
     height: 60px;
     box-shadow: 0 7px 20px -7px #00e0ff;
     background: linear-gradient(
@@ -204,7 +205,21 @@
       rgba(3, 225, 255, 0.66) 0%,
       #13cdc2 100%
     );
-    margin: 150px 0 0 29px;
+    margin: 170px 0 0 0;
+  }
+}
+
+@media (width <= 360px) {
+  .hero__button-cheak {
+    max-width: 300px;
+  }
+}
+@media (width <= 375px) {
+  .hero__button-cheak {
+    margin-top: 110px;
+  }
+  .hero__button {
+    margin-bottom: 75px;
   }
 }
 
@@ -223,6 +238,7 @@
   text-transform: uppercase;
   text-align: center;
   color: #fff;
+  margin: 0 13px 0 13px;
 }
 
 .hero__switch {
@@ -230,7 +246,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  max-width: 100%;
   height: 1vh;
   margin-bottom: 89px;
   margin-right: 20px;
@@ -244,14 +260,14 @@
   z-index: -1;
   background-position: center;
   background-size: cover;
-  width: 365px;
+  max-width: 365px;
   height: 945px;
   border-radius: 100%;
   fill: #00e0ff;
   filter: blur(100px);
 }
 
-@media (width <= 360px) {
+@media (width <= 375px) {
   .hero__switch::after {
     display: none;
   }

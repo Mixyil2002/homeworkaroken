@@ -2,39 +2,42 @@
   margin-top: 15px;
 }
 
-@media (width <= 360px) {
+@media (width <= 375px) {
   .header-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
     height: 70px;
     padding: 0 15px;
   }
 }
-@media (width <= 360px) {
+
+@media (width <= 768px) {
+  .header__phone {
+    font-weight: 500;
+    font-size: 16px;
+    text-align: right;
+    color: #fff;
+    flex-wrap: wrap;
+  }
+}
+
+@media (width <= 375px) {
   .header__container {
     justify-content: center;
     max-width: 500px;
     margin-left: 21%;
   }
-  .header {
-    min-width: 360px;
-    height: 875px;
-  }
 
   .header__logo {
-    display: none;
     width: 195px;
     height: 58px;
   }
 
   .header__phone {
-    min-width: 330px;
-    min-height: 104px;
-    box-shadow: 0 4px 34px 0 rgba(0, 0, 0, 0.35);
-    background: linear-gradient(313deg, #0b4d69 0%, #104c54 100%);
-    border-radius: 0 0 0 22px;
+    display: none;
   }
   .header__phone-icon {
     margin-right: 5px;
@@ -54,13 +57,13 @@
   content: url(../../Elements/Ellipse\ 14.png);
   position: absolute;
   z-index: -1;
-  width: 438px;
+  max-width: 438px;
   height: 438px;
   left: -50%;
   bottom: -170%;
 }
 
-@media (width <= 360px) {
+@media (width <= 375px) {
   .header__element-1::before {
     display: none;
   }
@@ -71,7 +74,6 @@
   align-items: center;
   justify-content: flex-start;
   max-width: 1200px;
-  width: 100%;
   margin: 0 auto;
   height: 80px;
   box-sizing: border-box;
@@ -98,6 +100,16 @@
   color: #fff;
 }
 
+@media (width <= 375px) {
+  .header__phone {
+    display: none !important;
+  }
+  .header__phone-icon {
+    width: 50px;
+    height: 50px;
+  }
+}
+
 .header__phone::before {
   content: " ";
   position: absolute;
@@ -111,13 +123,35 @@
   mix-blend-mode: lighten;
 }
 
-@media (width <= 360px) {
-  .header__phone::before {
-    display: none;
-  }
-}
-
 .header__phone-icon {
   margin-left: auto;
   padding-right: -20px;
+}
+
+@media (width <= 530px) {
+  .header__phone-icon {
+    display: none;
+  }
+}
+@media (width <= 375px) {
+  .header__phone-icon-adaptive {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 75px;
+    width: 37px;
+    height: 35px;
+  }
+}
+
+@media (width <= 375px) {
+  .header__container {
+    gap: 75px;
+  }
+}
+
+@media (width > 375px) {
+  .header__phone-icon-adaptive {
+    display: none;
+  }
 }

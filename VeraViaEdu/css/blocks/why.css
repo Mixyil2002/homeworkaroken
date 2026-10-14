@@ -8,6 +8,12 @@
   margin-top: 124px;
 }
 
+@media (width <= 768px) {
+  .why {
+    margin-top: 55px;
+  }
+}
+
 .why__main-text-span {
   font-weight: 500;
   font-size: 54px;
@@ -33,9 +39,6 @@
     color: #4abcec;
   }
 
-  .why__main-text {
-    margin-left: 29px;
-  }
   .why__main-text-span {
     color: #fff;
   }
@@ -43,14 +46,8 @@
 
 .why__block-1 {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(285px, 4fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 4fr));
   gap: 20px;
-}
-@media (width < 1200px) {
-  .why__block-1 {
-    padding: 0 20px 0 20px;
-    margin: 0 30px 0 30px;
-  }
 }
 
 .why__block-card-1 {
@@ -106,8 +103,11 @@
 }
 
 .why__block-1-text {
-  width: 205px;
-  height: 125px;
+  /* max-width: 205px; */
+
+  height: auto;
+  margin-bottom: 43px;
+  margin-right: 38px;
   font-weight: 500;
   font-size: 15px;
   color: #fff;
@@ -115,7 +115,7 @@
   padding: 0;
 }
 
-@media (width < 1200px) {
+@media (width < 360px) {
   .why__block-1-text {
     display: flex;
     justify-content: center;
@@ -123,6 +123,25 @@
     font-weight: 500;
     font-size: 14px;
     color: #fff;
+    align-items: flex-start;
+    /* width: 100%; */
+    height: auto;
+    padding-bottom: 20px;
+  }
+}
+
+@media (width < 768px) {
+  .why__block-1-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    color: #fff;
+    align-items: flex-start;
+    /* width: 100%; */
+    height: auto;
+    padding-bottom: 20px;
   }
 }
 
@@ -132,13 +151,6 @@
   gap: 20px;
   padding-top: 20px;
   /* 387px */
-}
-
-@media (width < 1200px) {
-  .why__block-2 {
-    padding: 0 20px 0 20px;
-    margin: 20px 30px 0 30px;
-  }
 }
 
 .why__size-card {
@@ -151,7 +163,7 @@
   position: relative;
   display: flex;
   align-items: center;
-  width: 100%;
+  max-width: 100%;
   flex-wrap: wrap;
   border-radius: 20px;
   height: auto;
@@ -210,8 +222,14 @@
   }
 }
 
+@media (width < 550px) {
+  .why__block-svg {
+    margin-top: 15px;
+  }
+}
+
 .why__block-2-text {
-  width: 305px;
+  max-width: 305px;
   height: 125px;
   font-weight: 500;
   font-size: 15px;
@@ -221,13 +239,27 @@
   padding: 0;
 }
 
-@media (width < 1200px) {
+@media (width < 920px) {
   .why__block-2-text {
     display: flex;
     justify-content: center;
     font-weight: 500;
     font-size: 14px;
     color: #fff;
+    height: auto;
+    padding-bottom: 20px;
+  }
+}
+
+@media (width < 360px) {
+  .why__block-2-text {
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 14px;
+    color: #fff;
+    height: auto;
+    padding-bottom: 20px;
   }
 }
 
