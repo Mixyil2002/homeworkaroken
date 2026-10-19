@@ -1,0 +1,18 @@
+/* base */
+
+@import "./base/normalize.css";
+@import "./base/fonts.css";
+@import "./base/vars.css";
+@import "./base/globals.css";
+
+/* blocks */
+
+@import "./blocks/header.css";
+@import "./blocks/sidebar.css";
+@import "./blocks/hero.css";
+@import "./blocks/benefits.css";
+@import "./blocks/prospects.css";
+@import "./blocks/facts.css";
+@import "./blocks/explanation.css";
+@import "./blocks/accardion.css";
+@import "./blocks/author.css";
