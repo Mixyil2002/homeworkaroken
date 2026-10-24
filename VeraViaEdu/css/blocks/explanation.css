@@ -1,0 +1,221 @@
+.explanation > * {
+  position: relative;
+  z-index: 1;
+}
+
+.explanation__title-1 {
+  font-weight: 500;
+  font-size: 54px;
+  text-transform: uppercase;
+  color: #fff;
+  max-width: 871px;
+  margin-top: 100px;
+  margin-bottom: 38px;
+}
+
+@media (width <= 768px) {
+  .explanation__title-1 {
+    font-size: 30px;
+  }
+}
+
+.explanation__main-title span {
+  color: #4abcec;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 54px;
+}
+
+@media (width <= 768px) {
+  .explanation__main-title span {
+    font-size: 30px;
+  }
+}
+
+.explanation__ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 53px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.4375;
+  color: #fff;
+}
+
+.explanation__svg {
+  width: 36px;
+  height: 36px;
+  margin: 0;
+}
+
+.explanation__ul li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 16px;
+  line-height: 1.4375;
+  font-size: 16px;
+  color: #fff;
+  max-width: 609px;
+}
+
+.explanation__ul li svg {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  margin-top: 1px;
+}
+.explanation__ul p {
+  margin-top: 15px;
+}
+
+.explanation__ul {
+  position: relative;
+}
+
+.explanation__ul::before {
+  content: "";
+  position: absolute;
+  left: 40%;
+  bottom: 0;
+  top: -50%;
+  width: 1200px;
+  height: 700px;
+  background: url("../../image/machinelearning\ 1\ \(1\).png") no-repeat
+    center / contain;
+}
+
+@media (width <= 768px) {
+  .explanation__ul::before {
+    display: none;
+  }
+}
+
+.explanation__img-mini {
+  display: flex;
+
+  mix-blend-mode: screen;
+  width: 100%;
+  height: 100%;
+}
+
+@media (width > 768px) {
+  .explanation__img-mini {
+    display: none;
+  }
+
+  .explanation__img-mini2 {
+    display: none;
+  }
+}
+
+.explanation__ul::after {
+  content: "";
+  position: absolute;
+  left: 40%;
+  bottom: 0;
+  top: -50%;
+  width: 1200px;
+  height: 700px;
+  background: url("../../Elements/Блики.svg") no-repeat center / contain;
+  z-index: 0;
+  pointer-events: none;
+  mix-blend-mode: lighten;
+}
+
+@media (width <= 360px) {
+  .explanation__button-img {
+    max-width: 393px;
+  }
+}
+
+.explanation__button {
+  margin-bottom: 116px;
+}
+
+.explanation__img-mini2 {
+  position: relative;
+  width: 100%;
+  height: 80%;
+}
+
+.explanation__img-mini2 {
+  content: "";
+  position: absolute;
+  z-index: -2;
+  top: 200px;
+}
+
+@media (width <= 768px) {
+  .explanation__button--mobile::before {
+    display: none;
+  }
+
+  .explanation__ul::after {
+    display: none;
+  }
+
+  .explanation__img-mini2::before {
+    content: "";
+    position: absolute;
+    background: url(../../Elements/Блики1.svg);
+  }
+}
+
+.explanation__button-cheak {
+  position: relative;
+  z-index: 1;
+  border-radius: 9px;
+  max-width: 479px;
+  height: 60px;
+  box-shadow: 0 7px 20px -7px #00e0ff;
+  background: linear-gradient(180deg, rgba(3, 225, 255, 0.66) 0%, #13cdc2 100%);
+  transition:
+    transform 0.5s ease,
+    box-shadow 0.5s ease;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  padding: 0 13px 0 13px;
+}
+
+@media (width <= 768px) {
+  .explanation__button-cheak {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 9px;
+    width: 100%;
+    height: 60px;
+    box-shadow: 0 7px 20px -7px #00e0ff;
+    background: linear-gradient(
+      180deg,
+      rgba(3, 225, 255, 0.66) 0%,
+      #13cdc2 100%
+    );
+    margin: 0;
+  }
+}
+
+@media (width <= 360px) {
+  .explanation__button-cheak {
+    max-width: 300px;
+  }
+}
+@media (width <= 375px) {
+  .explanation__button {
+    margin-bottom: 75px;
+  }
+}
+
+.explanation__button-cheak:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 36px rgba(45, 214, 255, 0.5);
+  transition:
+    transform 0.5s ease,
+    box-shadow 0.5s ease;
+}

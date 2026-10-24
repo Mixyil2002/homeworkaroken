@@ -1,0 +1,316 @@
+.hero__headphone {
+  position: relative;
+}
+
+.hero__title {
+  font-weight: 600;
+  font-size: 18px;
+  color: #747d81;
+}
+
+.hero__inner {
+  position: relative;
+  font-weight: 600;
+  font-size: 108px;
+  background: linear-gradient(180deg, #fff 31.75%, #1a3031 100%);
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 18px;
+}
+
+@media (width <= 768px) {
+  .hero__text-1 {
+    font-weight: 600;
+    font-size: 16px;
+    color: #747d81;
+  }
+
+  .section-1 {
+    padding-top: 61px;
+  }
+  .hero__inner {
+    font-weight: 600;
+    font-size: 51px;
+  }
+
+  .hero__description {
+    font-weight: 500;
+    font-size: 16px;
+
+    color: #fff;
+  }
+}
+
+.hero__container::before {
+  content: " url(../../icons/Neuron_4.svg)";
+  position: absolute;
+  z-index: 1;
+  background: url(../../icons/Neuron_4.svg) no-repeat;
+  width: 100%;
+  height: 700px;
+  left: 42%;
+
+  box-shadow: 58px 4px 191px 47px #000;
+  mix-blend-mode: lighten;
+}
+
+@media (width <= 1024px) {
+  .hero__container::before {
+    background: url(../../icons/Neuron_4.svg) no-repeat;
+    max-width: 700px;
+    max-height: 700px;
+  }
+}
+
+@media (width <= 768px) {
+  .hero__container::before {
+    background: url(../../icons/Neuron_4-mini.svg) no-repeat;
+    width: 474px;
+    height: 284px;
+    left: 15px;
+    top: 350px;
+  }
+}
+
+.hero__description {
+  max-width: 580px;
+  margin-bottom: 77px;
+  font-weight: 500;
+  font-size: 18px;
+  color: #fff;
+}
+
+.hero__warranty {
+  height: auto;
+  font-family: var(--font-family);
+  font-weight: 750;
+  font-size: 18px;
+  color: #fff;
+}
+
+.hero__book-text {
+  margin: 0 0 101px 0;
+  max-width: 472px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 172%;
+  color: #00e0ff;
+}
+
+@media (width <= 768px) {
+  .hero__warranty {
+    font-weight: 700;
+    font-size: 16px;
+
+    /* line-height: 21px; */
+    line-height: 1.3125;
+    color: #fff;
+  }
+  .hero__title-book {
+    max-width: 200px;
+    font-weight: 500;
+    font-size: 14px;
+
+    /* line-height: 28px; */
+    line-height: 2;
+    color: #00e0ff;
+  }
+}
+
+.hero__secondary-block {
+  display: flex;
+  gap: 33px;
+}
+
+.hero__secondary-block-icon {
+  position: relative;
+  border-radius: 12px;
+  width: 71px;
+  height: 71px;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 224, 255, 0.11) 0%,
+    rgba(0, 224, 255, 0.11) 100%
+  );
+  flex-shrink: 0;
+}
+
+.hero__secondary-block-text {
+  margin-top: 3px;
+}
+
+.hero__book-icon {
+  content: " ";
+  position: absolute;
+  left: 16px;
+  top: 18px;
+}
+
+.hero__button {
+  margin-bottom: 178px;
+}
+
+.hero__button-1 {
+  position: relative;
+}
+
+.hero__button-1::before {
+  content: " ";
+  position: absolute;
+  z-index: -1;
+  background: url(../../icons/Neuron_1bottomleft.svg) no-repeat;
+  max-width: 312px;
+  height: 356px;
+  top: 70%;
+  left: -30%;
+  transform: translateY(-50%);
+  box-shadow: 58px 4px 191px 47px #000;
+  mix-blend-mode: lighten;
+}
+
+@media (width <= 768px) {
+  .hero__button-1::before {
+    display: none;
+  }
+}
+
+.hero__button-cheak {
+  position: relative;
+  z-index: 1;
+  border-radius: 9px;
+  max-width: 479px;
+  height: 60px;
+  /* margin: 0 13px 0 13px; */
+  box-shadow: 0 7px 20px -7px #00e0ff;
+  background: linear-gradient(180deg, rgba(3, 225, 255, 0.66) 0%, #13cdc2 100%);
+  transition:
+    transform 0.5s ease,
+    box-shadow 0.5s ease;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  padding-left: 13px;
+  padding-right: 13px;
+}
+
+@media (width <= 768px) {
+  .hero__button-cheak {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 9px;
+    max-width: 100%;
+    height: 60px;
+    box-shadow: 0 7px 20px -7px #00e0ff;
+    background: linear-gradient(
+      180deg,
+      rgba(3, 225, 255, 0.66) 0%,
+      #13cdc2 100%
+    );
+    margin: 170px 0 0 0;
+  }
+}
+
+@media (width <= 360px) {
+  .hero__button-cheak {
+    max-width: 300px;
+  }
+}
+@media (width <= 375px) {
+  .hero__button-cheak {
+    margin-top: 110px;
+  }
+  .hero__button {
+    margin-bottom: 75px;
+  }
+}
+
+.hero__button-cheak:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 36px rgba(45, 214, 255, 0.5);
+  transition:
+    transform 0.5s ease,
+    box-shadow 0.5s ease;
+}
+
+.hero__switch {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  height: 1vh;
+  margin-bottom: 89px;
+  margin-right: 20px;
+  gap: 32px;
+  transform: rotate(90deg);
+}
+.hero__switch::after {
+  content: "";
+  position: absolute;
+  background: url(../../Elements/Ellipse\ 11.svg) no-repeat;
+  z-index: -1;
+  background-position: center;
+  background-size: cover;
+  max-width: 365px;
+  height: 945px;
+  border-radius: 100%;
+  fill: #00e0ff;
+  filter: blur(100px);
+}
+
+@media (width <= 375px) {
+  .hero__switch::after {
+    display: none;
+  }
+}
+
+.hero__switch .hero__switch-title {
+  font-weight: 600;
+  font-size: 10px;
+  margin-right: 50px;
+  letter-spacing: 0.36em;
+  text-transform: uppercase;
+  color: #747d81;
+  transform: rotate(180deg);
+}
+
+.hero__switch-svg {
+  display: flex;
+  align-items: start;
+  width: 20px;
+  height: 37px;
+  transform: rotate(90deg);
+  cursor: pointer;
+  margin: 0;
+}
+
+.hero__switch-svg {
+  position: relative;
+  right: 40px;
+}
+
+.hero__switch-svg::before {
+  content: " ";
+  position: absolute;
+  z-index: -1;
+  background: url(../../icons/Tochka.svg) no-repeat;
+  width: 30px;
+  height: 30px;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(180deg);
+  cursor: pointer;
+}
+
+@media (width <= 1050px) {
+  .hero__switch {
+    display: none;
+  }
+}
