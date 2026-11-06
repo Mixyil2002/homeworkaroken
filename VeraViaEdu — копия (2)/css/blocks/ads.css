@@ -1,0 +1,54 @@
+.ads__main-text {
+  display: flex;
+  align-items: center;
+  gap: 311px;
+  margin-bottom: 40px;
+}
+
+.ads__main-title {
+  margin-top: 97px;
+  font-family: "Avenir Next Cyr", sans-serif;
+  font-weight: 500;
+  font-size: 54px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.ads__span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 97px;
+  font-family: "Avenir Next Cyr", sans-serif;
+  font-weight: 750;
+  font-size: 12px;
+  letter-spacing: 0.25em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #4abcec;
+  border: 1px solid #00e0ff;
+  border-radius: 9px;
+  width: 213px;
+  height: 60px;
+}
+
+.swiper__vector {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 0 0 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 100%;
+  fill: #08262b;
+  margin: auto;
+}
+
+.swiper-button-prev {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper__vector:hover {
+  stroke: #00a8ff;
+}
