@@ -1,0 +1,45 @@
+.work {
+  background: linear-gradient(286.41deg, #022335 3.73%, #043a41 91.85%);
+}
+
+.work__main-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 40px;
+}
+
+.work__main-title {
+  display: flex;
+  margin-top: 56px;
+  font-family: "Avenir Next Cyr", sans-serif;
+  font-weight: 500;
+  font-size: 54px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.work__span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 56px;
+  font-family: "Avenir Next Cyr", sans-serif;
+  font-weight: 750;
+  font-size: 12px;
+  letter-spacing: 0.25em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #4abcec;
+  border: 1px solid #00e0ff;
+  border-radius: 9px;
+  width: 213px;
+  height: 60px;
+}
+
+@media (width <=560px) {
+  .work__span {
+    display: none;
+  }
+}

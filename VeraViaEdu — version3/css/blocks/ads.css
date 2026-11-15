@@ -1,0 +1,197 @@
+.ads {
+  margin-bottom: 100px;
+}
+
+.ads__main-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.ads__main-title {
+  margin-top: 97px;
+  font-family: "Avenir Next Cyr", sans-serif;
+  font-weight: 500;
+  font-size: 54px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.ads__span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 97px;
+  font-family: "Avenir Next Cyr", sans-serif;
+  font-weight: 750;
+  font-size: 12px;
+  letter-spacing: 0.25em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #4abcec;
+  border: 1px solid #00e0ff;
+  border-radius: 9px;
+  width: 213px;
+  height: 60px;
+}
+
+.swiper__vector {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 0 0 10px;
+
+  transition: stroke 0.3s ease;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  top: 30% !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 100%;
+}
+
+.swiper-button-prev:active,
+.swiper-button-next:active {
+  background-color: rgba(3, 226, 255, 0.9);
+  transform: scale(0.95);
+  transition: transform 0.8s ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .swiper-button-prev:hover,
+  .swiper-button-next:hover {
+    background-color: rgba(3, 226, 255, 0.9);
+    transform: scale(1.05);
+  }
+}
+
+.swiper__slide {
+  position: relative;
+  margin-bottom: 76px;
+}
+
+.swiper__inside-date {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  top: 5%;
+  left: 70%;
+  z-index: 2;
+  font-family: "Avenir Next Cyr", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  text-align: right;
+  color: #fff;
+}
+.swiper__calendar {
+  width: 12px;
+  height: 12px;
+}
+
+.swiper__slide-title {
+  font-family: "Avenir Next Cyr", sans-serif;
+  font-weight: 750;
+  font-size: 16px;
+
+  /* line-height: 21px; */
+  line-height: 1.3125;
+  color: #fff;
+  margin-bottom: 18px;
+  margin-top: 29px;
+}
+
+.swiper__slide-text {
+  font-family: "Avenir Next Cyr", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+
+  /* line-height: 21px; */
+  line-height: 1.4;
+  background: linear-gradient(180deg, #fff 65.96%, rgba(105, 104, 104, 0) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 9px;
+}
+
+.swiper__slide-modal {
+  font-family: "Avenir Next Cyr", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+
+  /* line-height: 21px; */
+  line-height: 1.75;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #4abcec;
+}
+
+/* --- Блок: vacancy-info --- */
+.vacancy-info {
+  margin-bottom: 20px;
+  max-width: 387px;
+}
+
+/* --- Элемент: строка --- */
+.vacancy-info__row {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+/* --- Элемент: название характеристики --- */
+.vacancy-info__label {
+  color: #ffffff;
+  flex-shrink: 0;
+}
+
+/* --- Элемент: линия с точками --- */
+.vacancy-info__dots {
+  flex-grow: 1;
+  border-bottom: 2px dotted #5a7285;
+  margin: 0 8px;
+  position: relative;
+  top: -3px;
+}
+
+/* --- Элемент: значение характеристики --- */
+.vacancy-info__value {
+  color: #a0b0c0;
+  text-align: right;
+  flex-shrink: 0;
+}
+
+@media (width <= 1024px) {
+  .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    height: auto;
+  }
+
+  .swiper__picture {
+    width: 300px;
+  }
+
+  .ads__main-title {
+    font-family: "Avenir Next Cyr", sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #fff;
+  }
+
+  .ads__span {
+    display: none;
+  }
+}

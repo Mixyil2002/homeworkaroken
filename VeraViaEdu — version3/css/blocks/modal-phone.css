@@ -1,0 +1,41 @@
+/* ========================================= */
+/* КНОПКА-ИКОНКА ТЕЛЕФОНА (НОВЫЙ КЛАСС)      */
+/* ========================================= */
+.header__phone-icon-adaptive {
+  display: none; /* Скрыто на ПК по умолчанию */
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+}
+
+.header__phone-icon-adaptive:hover {
+  transform: scale(1.1);
+}
+
+/* ========================================= */
+/* МЕДИАЗАПРОС ДЛЯ МОБИЛЬНЫХ (< 360px)       */
+/* ========================================= */
+@media (max-width: 359px) {
+  /* Показываем иконку */
+  .header__phone-icon-adaptive {
+    display: inline-flex;
+  }
+
+  /* ... остальные стили для окна (padding, min-width и т.д.) остаются без изменений ... */
+  .phone-modal-content {
+    padding: 20px;
+    min-width: 260px;
+  }
+
+  .phone-modal-number {
+    font-size: 16px;
+  }
+
+  .phone-modal-body {
+    gap: 10px;
+  }
+}
