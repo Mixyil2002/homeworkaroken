@@ -1,0 +1,101 @@
+/* ========================================= */
+/* ПАНЕЛЬ (Выезжает сбоку, компактная)       */
+/* ========================================= */
+.mobile-contact-menu {
+  position: fixed;
+
+  /* Привязываем к правому краю */
+  top: 0; /* Отступ сверху (чтобы не перекрывать шапку). Подстройте под свой хедер */
+  right: 0; /* Прижимаем вплотную к правому краю */
+
+  /* Компактные размеры */
+  width: 95%; /* Ширина панели */
+  max-width: 400px;
+  height: auto; /* Высота по содержимому (не на весь экран!) */
+  min-height: 104px; /* Минимальная высота, чтобы добавить "воздуха" (было меньше) */
+  padding-left: 20px; /* Увеличиваем внутренние отступы, чтобы панель стала больше */
+  padding-right: 32px;
+
+  background: linear-gradient(286.41deg, #0b4d69 3.74%, #104c54 91.97%);
+  border-radius: 0 0 0 22px; /* Скругляем только левые углы, так как правый прижат к экрану */
+  box-shadow: 0 4px 34px 0 rgba(0, 0, 0, 0.35);
+  z-index: 10;
+
+  /* Выстраиваем элементы (иконка, номер, крестик) в ряд */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+
+  /* СКРЫТО ПО УМОЛЧАНИЮ: Сдвигаем за правый край экрана на 100% своей ширины */
+  transform: translateX(100%);
+  opacity: 0;
+  visibility: hidden;
+
+  /* Плавная анимация выезда */
+  transition:
+    transform 0.3s ease-in-out,
+    opacity 0.3s ease,
+    visibility 0.3s ease;
+}
+
+/* Класс для открытия: панель выезжает на свое место (сдвиг 0) */
+.mobile-contact-menu.active {
+  transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+/* ========================================= */
+/* ВНУТРЕННИЕ ЭЛЕМЕНТЫ (Оставляем как было)  */
+/* ========================================= */
+.mobile-contact-menu__content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: "Avenir Next Cyr", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: right;
+  color: #fff;
+  border-top: 1px solid rgba(255, 255, 255, 0.2); /* Линия сверху */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Линия снизу */
+}
+
+.mobile-contact-menu__phone {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #ffffff;
+  font-family: "Avenir Next Cyr", sans-serif;
+  font-size: 16px; /* Чуть уменьшили шрифт, чтобы влезло в 280px */
+  font-weight: 500;
+  text-decoration: none;
+  white-space: nowrap;
+  margin: 17px 0 17px 20px;
+}
+
+.mobile-contact-menu__close {
+  background: none;
+  border: none;
+  color: #00a8ff;
+  cursor: pointer;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile-contact-menu__close {
+  order: 2; /* Ставит крестик после номера телефона */
+  /* ... ваши остальные стили ... */
+}
+
+/* А контенту с телефоном задайте первый порядок */
+.mobile-contact-menu__content {
+  order: 1;
+}
+
+.phone-modal-overlay {
+  display: none;
+}

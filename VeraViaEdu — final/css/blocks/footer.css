@@ -1,0 +1,207 @@
+.footer {
+  padding-top: 65px;
+  background: linear-gradient(106.41deg, #022335 3.79%, #043a41 92.41%);
+}
+
+.footer__container {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (width <= 840px) {
+  .footer__container {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+.footer__right {
+  display: flex;
+  flex-direction: column; /* Ставим контакты и соцсети друг под другом */
+  align-items: flex-end; /* Прижимаем всё к правому краю */
+  margin-left: auto; /* Толкаем всю эту колонку вправо */
+}
+
+.footer__logo {
+  max-width: 287px;
+  height: auto;
+}
+
+@media (width <= 640px) {
+  .footer__logo-img {
+    max-width: 195px;
+    margin-bottom: 34px;
+  }
+}
+
+.footer__mail {
+  font-family: "Avenir Next Cyr", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: right;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #4abcec;
+}
+
+.footer__contacts {
+  display: flex;
+  justify-content: space-between;
+  gap: 36px;
+  margin-left: auto;
+}
+
+.footer__mail,
+.footer__phone {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.footer__phone {
+  font-family: "Avenir Next Cyr", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: right;
+  color: #fff;
+}
+
+.footer__mail-icon {
+  margin-right: 5px;
+}
+
+.footer__smm {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-left: auto;
+}
+
+.footer__smm-text {
+  flex-wrap: wrap;
+  font-family: "Avenir Next Cyr", sans-serif;
+  font-weight: 600;
+  font-size: 10px;
+  margin-right: 14px;
+
+  /* line-height: 21px; */
+  line-height: 2.1;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #747d81;
+}
+
+.footer__facebook-icon,
+.footer__sms-icon,
+.footer__youtube-icon,
+.footer__whatapp-icon {
+  margin-right: 16px;
+}
+
+.footer__copyright {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 100%;
+  font-family: "Avenir Next Cyr", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+
+  /* line-height: 21px; */
+  line-height: 1.5;
+  text-align: center;
+  background: linear-gradient(180deg, #fff 65.96%, rgba(105, 104, 104, 0) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 56px;
+  padding-bottom: 20px;
+}
+
+.copyright__text {
+  min-width: 326px;
+  margin: 0 28px 0 28px;
+}
+
+.copyright__line-left,
+.copyright__line-right {
+  width: 100%;
+}
+
+.afreeca {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 16px;
+}
+
+.afreeca__logo {
+  position: relative;
+}
+
+.afreeca__logo::before {
+  content: url(../../Elements/afreeca.png);
+  position: absolute;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
+  bottom: 0;
+  right: 12px;
+  z-index: -1;
+}
+
+.afreeca__text {
+  font-family: "Avenir Next Cyr", sans-serif;
+  font-weight: 600;
+  font-size: 10px;
+
+  /* line-height: 21px; */
+  line-height: 2.1;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #747d81;
+}
+
+@media (width <= 506px) {
+  .work__main-title {
+    font-family: "Avenir Next Cyr", sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #fff;
+  }
+  .work__span {
+    display: none;
+  }
+
+  .footer__contacts {
+    flex-direction: column-reverse;
+    justify-content: start;
+    margin-left: 0;
+    height: auto;
+    gap: 6px;
+  }
+
+  .footer__right {
+    margin-left: 0;
+    margin-right: auto;
+    align-items: flex-start;
+  }
+
+  .copyright__text {
+    max-width: 301px;
+  }
+
+  .footer__smm-text {
+    display: none;
+  }
+
+  .footer__smm {
+    margin-left: 0;
+  }
+
+  .footer__phone {
+    margin-bottom: 0;
+  }
+}
