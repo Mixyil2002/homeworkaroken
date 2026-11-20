@@ -1,4 +1,4 @@
-.explanation > * {
+.explanation  {
   position: relative;
   z-index: 1;
 }
@@ -116,7 +116,7 @@
   top: -50%;
   width: 1200px;
   height: 700px;
-  background: url("../../Elements/Блики.svg") no-repeat center / contain;
+  background: url("../../Elements/Flash.svg") no-repeat center / contain;
   z-index: 0;
   pointer-events: none;
   mix-blend-mode: lighten;
