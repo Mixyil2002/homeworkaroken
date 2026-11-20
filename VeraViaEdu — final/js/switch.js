@@ -16,9 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   }
-});
-
-scrollBtn.addEventListener("click", (e) => {
+  scrollBtn.addEventListener("click", (e) => {
   e.preventDefault();
 
   // Добавляем эффект нажатия
@@ -30,3 +28,6 @@ scrollBtn.addEventListener("click", (e) => {
     scrollBtn.classList.remove("is-active"); // Убираем класс через время
   }, 100);
 });
+});
+
+
