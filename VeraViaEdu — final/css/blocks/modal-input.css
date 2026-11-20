@@ -100,13 +100,15 @@
 
 /* --- Поля ввода --- */
 .form-input {
+  font-family: "AvenirNextCyr", sans-serif;
   width: 100%;
   padding: 12px 15px;
   background-color: rgba(255, 255, 255, 0.05); /* Полупрозрачный фон */
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 8px;
   color: #ffffff;
-  font-size: 14px;
+  font-size: 15px;
+  font-weight: 500;
   outline: none;
   box-sizing: border-box; /* Чтобы padding не увеличивал ширину */
   transition:
